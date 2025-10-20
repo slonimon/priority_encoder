@@ -5,14 +5,17 @@
 >The module test results for a bit depth of 5 (for clarity) are shown in _Figure 3_.
 
 
-![timing analys](fig_1.png)
+![timing analysis](fig_1.png)
 
-Fig.1. Timing analys
+Fig.1. Timing analysis
+
 
 ![Utilization report](fig_2.png)
 
 Fig.2. Utilization report
 
+
 ![TestBench result](fig_3.png)
+
 
 Fig.3. TestBench result
