@@ -21,9 +21,6 @@ logic ref_test_data_val_i [NUM_OF_WORDS-1:0];
 logic [WIDTH-1:0] ref_test_data_i [NUM_OF_WORDS-1:0];
 logic [WIDTH-1:0] ref_test_data_left_o [NUM_OF_WORDS-1:0];
 logic [WIDTH-1:0] ref_test_data_right_o [NUM_OF_WORDS-1:0];
-logic left_match;
-logic right_match;
-logic all_match;
 
 
 priority_encoder #(

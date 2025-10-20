@@ -18,7 +18,7 @@ logic [WIDTH-1:0] data_l_next;
 logic [WIDTH-1:0] data_r_next;
 logic data_val_ff;
 
-always_ff @(posedge clk_i, posedge srst_i) begin 
+always_ff @(posedge clk_i) begin 
   if (srst_i) begin
     data_val_ff <= 1'b0;
     data_i_ff   <= {WIDTH{1'b0}};
@@ -41,7 +41,7 @@ endgenerate
 assign  revers_data_o = revers_data_i & ~(revers_data_i - 1'b1);
 assign  data_r_next = data_i_ff & ~(data_i_ff - 1'b1);
 
-always_ff @(posedge clk_i, posedge srst_i) begin 
+always_ff @(posedge clk_i) begin 
   if (srst_i) begin
     data_left_o  <= {WIDTH{1'b0}};
     data_right_o <= {WIDTH{1'b0}};
